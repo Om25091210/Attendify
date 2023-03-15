@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Attendify</string>
+    <string name="image">image</string>
+    <string name="good_morning_raihan">Good Morning, <b> Raihan </b> ✌️.️</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cse">CSE</string>
+    <string name="it">IT</string>
+    <string name="et_t">ET&amp;T</string>
+    <string name="electrical">Electrical</string>
+    <string name="mining">Mining</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="civil">Civil</string>
+    <string name="add_class">Add Class</string>
+    <string name="proceed">Proceed</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="semester">Semester</string>
+    <string name="sub">Subject</string>
+    <string name="branch">Semester</string>
+    <string name="title_activity_splash">Splash</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="record_and_track">Record/Track</string>
+    <string name="attendance">Attendance</string>
+    <string name="at_your_fingertip">at Your Fingertip</string>
+    <string name="get_started">Get Started</string>
+    <string name="a_platform_built_for_a_new_way_of_working">A platform built for a new way of working.</string>
+    <string name="choose_your_semester_in_which_you_teach">Now, Choose your semester in which you teach!!</string>
+    <string name="choose_your_branch_in_which_you_teach">Choose your branch in which you teach!!</string>
+    <string name="save">Save</string>
+    <string name="search_here">Search</string>
+    <string name="space">Enter</string>
+</resources>

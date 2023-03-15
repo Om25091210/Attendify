@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "884274135463",
+    "firebase_url": "https://attendy-8b536-default-rtdb.firebaseio.com",
+    "project_id": "attendy-8b536",
+    "storage_bucket": "attendy-8b536.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884274135463:android:a0d23336e5d49dce90f682",
+        "android_client_info": {
+          "package_name": "com.gecb.attendy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884274135463-mme01gqrgt1inroin09tl65ahr1qtoua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gecb.attendy",
+            "certificate_hash": "cf388bb7fa6f7ea09ceb2c9b0d8493204dfae0aa"
+          }
+        },
+        {
+          "client_id": "884274135463-glkruds0f6a5h5d6joo8dpe36fmm0mor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtpU-RWBP-Z0NI_fk14wAT5xBfbpsDHhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884274135463-glkruds0f6a5h5d6joo8dpe36fmm0mor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
