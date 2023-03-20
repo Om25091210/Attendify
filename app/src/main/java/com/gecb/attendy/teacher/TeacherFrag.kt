@@ -1,6 +1,7 @@
 package com.gecb.attendy.teacher
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -108,6 +109,12 @@ class TeacherFrag : Fragment() {
                 .commit()
         }
         _binding.rv.adapter=adapter
+
+        _binding.animate.setOnClickListener({
+            startActivity(Intent(this.context , profile::class.java))
+        })
+
+
         return binding.root
     }
 

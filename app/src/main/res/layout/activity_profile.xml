@@ -67,8 +67,10 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2">
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -89,7 +91,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/profile_name_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -115,7 +117,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine1"
+                android:id="@+id/profile_role_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -139,21 +141,14 @@
                 android:text="Semester"
                 android:textColor="@color/green"
                 android:textSize="16sp" />
+            <include
+                android:id="@+id/sem"
+                layout="@layout/profile_sem_selection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:autofillHints="City"
-                android:ems="10"
-                android:hint="@string/space"
-                android:padding="15dp"
-                android:background="@drawable/profile_editext_shape"
-                android:gravity="start|top"
-                android:inputType="textNoSuggestions"
-                android:textSize="16sp"
-                android:theme="@style/EditTheme" />
 
             <TextView
                 android:id="@+id/textView33"
@@ -165,47 +160,11 @@
                 android:textColor="@color/green"
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:autofillHints="contact"
-                android:background="@drawable/profile_editext_shape"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="@string/space"
-                android:inputType="textNoSuggestions"
-                android:padding="15dp"
-                android:textSize="16sp"
-                android:theme="@style/EditTheme"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <include
+                android:id="@+id/branch_layout"
+                layout="@layout/profile_branch_selection"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView44"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="Address"
-                android:textColor="@color/green"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/editTextTextMultiLine4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:autofillHints="Address"
-                android:background="@drawable/profile_editext_shape"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="@string/space"
-                android:inputType="textNoSuggestions"
-                android:padding="15dp"
-                android:textSize="16sp"
-                android:theme="@style/EditTheme"
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView55"
@@ -223,12 +182,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autofillHints="qualification"
-                android:ems="10"
-                android:hint="@string/space"
-                android:padding="15dp"
                 android:background="@drawable/profile_editext_shape"
+                android:ems="10"
                 android:gravity="start|top"
+                android:hint="@string/space"
                 android:inputType="textNoSuggestions"
+                android:padding="15dp"
                 android:textSize="16sp"
                 android:theme="@style/EditTheme" />
 
