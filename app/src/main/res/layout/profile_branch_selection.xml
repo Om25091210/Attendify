@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.gecb.attendy.R"/>
+        <variable
+            name="isVisible"
+            type="boolean" />
+        <variable
+            name="csid"
+            type="int" />
+        <variable
+            name="itid"
+            type="int" />
+        <variable
+            name="ettid"
+            type="int" />
+        <variable
+            name="eeid"
+            type="int" />
+        <variable
+            name="minid"
+            type="int" />
+        <variable
+            name="civilid"
+            type="int" />
+        <variable
+            name="mechid"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_cse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/cse"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{csid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/profile_it"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/it"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{itid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_ett"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/et_t"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{ettid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/profile_elec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/electrical"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{eeid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_mining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/mining"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{minid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/profile_civil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_amount_bg"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/civil"
+                    android:textColor="@color/brown_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@{civilid}"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profile_mech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_amount_bg"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/mechanical"
+                android:textColor="@color/brown_900"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@{mechid}"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
